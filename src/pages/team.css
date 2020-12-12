@@ -1,0 +1,165 @@
+.container {
+    width: 90%;
+    background: white;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.cards-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/** Microsoft Edge Browser 15+ - @supports method */
+
+.follow-icon {
+    padding: 5px;
+    /* color: white; */
+    font-size: 37px;
+}
+
+.card {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    width: 280px;
+    height: 390px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: transform 0.5s;
+    border: 1px solid black;
+    border-radius: 13px;
+    border-radius: 13px;
+}
+
+/** card visible animation*/
+
+@keyframes cardAnimate {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.card:nth-child(1) {
+    animation: cardAnimate 2s 3s backwards;
+}
+.card:nth-child(2) {
+    animation: cardAnimate 2s 3.5s backwards;
+}
+.card:nth-child(3) {
+    animation: cardAnimate 2s 3s backwards;
+}
+.card:nth-child(4) {
+    animation: cardAnimate 2s 3.5s backwards;
+}
+.card:nth-child(5) {
+    animation: cardAnimate 2s 3s backwards;
+}
+.card:nth-child(6) {
+    animation: cardAnimate 2s 3.5s backwards;
+}
+.card:nth-child(7) {
+    animation: cardAnimate 2s 4s backwards;
+}
+
+.card:hover {
+    transform: scale(1.09);
+    /* background-color: #def2f1; */
+    /* background-color: #77d2e9; */
+    /* background-color: skyblue; */
+    background-color: #c3c7d0;
+    /* background-color: #9b9a9f; */
+}
+
+.image-top {
+    margin-top: 39px;
+    width: 60%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.card h1.full-name {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 22px;
+    color: #1a1b1a;
+    margin: 10px;
+}
+
+ul.social-icons {
+    width: 150px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0 20px 0;
+    border-top: 1px solid #999;
+    padding-top: 18px;
+}
+
+@supports (-ms-ime-align: auto) and (-webkit-text-stroke: initial) {
+    ul.social-icons {
+        justify-content: space-around; /*! for Edge Browser because it not support space-evenly value*/
+    }
+}
+
+ul.social-icons i {
+    font-size: 18px;
+    padding: 3px 6px;
+}
+
+.follow-icon {
+    padding: 5px;
+    color: black;
+    font-size: 57px;
+}
+
+/** Media */
+@media (max-width: 992px) {
+    .container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .heading {
+        width: 90%;
+    }
+    .card {
+        margin: 0 30px 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .heading {
+        font-size: 50px;
+    }
+    .heading::after {
+        height: 40px;
+    }
+}
+
+@media (max-width: 398px) {
+    .container {
+        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+    }
+    .heading {
+        font-size: 38px;
+    }
+    .heading::after {
+        height: 28px;
+    }
+}

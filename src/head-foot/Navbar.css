@@ -1,0 +1,59 @@
+.logo_img {
+    width: 180px;
+    padding: 10px;
+}
+.nav_item {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    font-weight: 300;
+}
+.nav_item a {
+    color: black;
+    font-weight: 400;
+}
+.dropdown-menu.ddd a {
+    text-decoration: none;
+}
+.nav_bar {
+    background-color: royalblue;
+}
+.nav_item :hover {
+    color: #000000;
+    text-decoration: none;
+    font-size: 19px;
+}
+
+.dropdown-menu.ddd {
+    font-size: 15px;
+    padding: 0;
+    margin-top: 20px;
+}
+.dropdown-item:active {
+    color: black !important;
+    background-color: transparent !important;
+}
+.drptitle {
+    color: black !important;
+    font-size: 18px;
+}
+.toggle-ico {
+    font-size: 30px;
+}
+
+.navbar-light .navbar-toggler {
+    border: none;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+}
+@media screen and (max-width: 768px) {
+    .nav_item {
+        padding: 8px 0;
+    }
+    .dropdown-menu.ddd {
+        font-size: 15px;
+        margin-top: 3px;
+    }
+}

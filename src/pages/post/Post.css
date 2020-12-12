@@ -1,0 +1,79 @@
+.item-d {
+    width: 400px;
+    margin: 10px auto;
+}
+
+.c-card {
+    background: white;
+    padding: 7px;
+    text-decoration: none;
+    color: #444;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    position: relative;
+    top: 0;
+    transition: all 0.1s ease-in;
+}
+
+.c-card:hover {
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.c-card article {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.c-card h1 {
+    font-size: 20px;
+    margin: 0;
+    color: #333;
+}
+
+.c-card p {
+    flex: 1;
+    line-height: 1.4;
+}
+
+.card span {
+    font-size: 12px;
+    font-weight: bold;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 2em 0 0 0;
+}
+
+.c-card .thumb-d {
+    padding-bottom: 60%;
+    background-size: 90%;
+    background-position: center center;
+}
+.title-a:hover {
+    text-decoration: none;
+}
+.rm-btn {
+    max-width: 100px;
+    margin: 15px 0;
+    background-color: #9ad9b5;
+    padding: 5px;
+    border: unset;
+}
+
+@media screen and (max-width: 400px) {
+    .item-d {
+        width: 250px;
+        padding: 0%;
+        margin: 5px auto;
+        max-width: 100%;
+    }
+    .c-card {
+        margin: 0;
+    }
+}

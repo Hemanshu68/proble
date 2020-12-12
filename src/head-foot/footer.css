@@ -1,0 +1,114 @@
+.footer-container {
+    /* background-color: rgba(0, 0, 0, 0.918); */
+    background-color: #1e1e1e;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.footer-container * {
+    margin-top: 10px;
+}
+.arch-cont {
+    width: 100%;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 10px;
+    color: #4a74f0;
+}
+
+.arch-select {
+    font-size: medium;
+}
+
+.social-follow {
+    font-size: 28px;
+    padding: 5px;
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+.follow-icon {
+    padding: 5px;
+    /* color: white; */
+    font-size: 37px;
+}
+.social-txt {
+    font-size: 28px;
+}
+
+.copy-cont {
+    background-color: black;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.copy-txt {
+    font-size: medium;
+}
+
+.pat {
+    text-decoration: none;
+    color: white;
+}
+.quix-link {
+    width: 100%;
+    padding: 10px;
+    padding-left: 30px;
+    padding-top: 7px;
+    font-size: small;
+    font-size: 28px;
+}
+.quix-link-ul {
+    list-style: circle;
+    margin: 0;
+    margin-left: 5px;
+    padding: 0;
+    padding-left: 10px;
+    font-size: 20px;
+}
+@media screen and (max-width: 500px) {
+    .arch-cont {
+        margin: 5px;
+        margin-left: 20px;
+    }
+    .copy-txt {
+        font-size: 70%;
+    }
+    .footer-container {
+        flex-direction: column;
+    }
+    .arch-cont {
+        padding: 0;
+        padding-left: 50px;
+        margin: 7px 24px;
+    }
+    .arch-div {
+        margin: 0;
+    }
+    .social-follow {
+        padding: 0;
+        padding-left: 50px;
+        margin: 7px 15px;
+        flex-direction: column;
+    }
+    .social-txt {
+        margin: 0%;
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-container * {
+        text-align: start;
+        padding: 0 20px;
+        margin: 10px 0;
+        font-size: 100%;
+    }
+}
